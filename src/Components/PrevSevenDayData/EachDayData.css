@@ -1,0 +1,26 @@
+.sevenDayCont{
+    background-color: #EEF2F3;
+    border-radius: 0 10px;
+    font-size: 20px;
+    color:  black;
+    margin: 2px;
+    padding: 0;
+}
+
+.sevenDayCont h3 {
+    margin:  0;
+    text-align: center;
+}
+.dayDetails{
+    display: flex;
+    gap:  10px;
+}
+.eachDay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+#date{
+    font-size: 17px;
+}

@@ -14,7 +14,7 @@ export default function EachDayData() {
 
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APP_ID}&units=metric`;
 
-  // console.log(city);
+  console.log(city);
 
   const [data, setData] = useState(null);
 
@@ -25,16 +25,18 @@ export default function EachDayData() {
     axios
       .get(url)
       .then((res) => {
+        console.log(111,res)
         setData(res?.data);
       })
       .then(() => {
         localStorage.setItem("dailyData", JSON.stringify(data?.list));
+        console.log("first")
       });
-  }, [city]);
+  }, []);
 
   // console.log(data);
 
-  const dayList = [];
+  const dayList = useState([]);
 
   for (let i = 0; i < 9; i++) {
     dayList.push(data?.list[i]);

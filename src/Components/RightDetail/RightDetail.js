@@ -18,7 +18,7 @@ export default function RightDetail() {
     <>
       <Context.Consumer>
         {(data) => {
-          // console.log(data)
+          console.log(data)
           return (
             <RightDetailSty>
               <>
@@ -40,7 +40,7 @@ export default function RightDetail() {
                     </div>
                   </div>
 
-                  <EachDayData></EachDayData>
+                  {/* <EachDayData/> */}
                 </div>
               </>
             </RightDetailSty>

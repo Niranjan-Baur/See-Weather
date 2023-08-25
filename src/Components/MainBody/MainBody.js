@@ -137,7 +137,7 @@ export default function MainBody() {
             <div className="mainTop">
               <div className="date">
                 <div>
-                  <h2>Hello, Niranjan</h2>
+                  <h2>Hello, Nice to see you again</h2>
                 </div>
                 <div>
                   <h4>{date}</h4>
@@ -227,7 +227,7 @@ export default function MainBody() {
             )}
           </div>
         </MainBodySty>
-        <Dailygraph></Dailygraph>
+        {/* <Dailygraph></Dailygraph> */}
         <RightDetail></RightDetail>
       </Context.Provider>
     </>

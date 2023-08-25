@@ -83,7 +83,7 @@ export default function App() {
 
   return (
     <DailygraphSty>
-      <div className="chart">
+      <div className="chart" style={{width:"100%"}}>
         <LineChart
           width={750}
           height={250}

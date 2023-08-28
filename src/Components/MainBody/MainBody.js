@@ -50,7 +50,7 @@ export default function MainBody() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const details = JSON.parse(localStorage.getItem("details")) || [];
+    const details = JSON.parse(localStorage.getItem("details") || "[]") || [];
     setSaveList(details);
   }, []);
 
@@ -71,7 +71,7 @@ export default function MainBody() {
     data = JSON.parse(data);
 
     let detailsData = localStorage.getItem("details");
-    detailsData = JSON.parse(detailsData);
+    detailsData = JSON.parse(detailsData || "[]");
 
     // console.log(data.data.name)
 

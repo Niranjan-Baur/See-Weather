@@ -22,6 +22,7 @@ export default function SideNav() {
                   navigate("/map")
                 }}><span id="icon"><i class="fa-solid fa-map"></i></span> Map</li>
                 <li  onClick={()=>{
+                  
                   navigate("/savelocation")
                 }}><span id="icon"><i class="fa-solid fa-location-dot"></i></span> Saved Location</li>
                 {/* <li><span id="icon"><i class="fa-solid fa-calendar-days"></i></span> Calender</li> */}

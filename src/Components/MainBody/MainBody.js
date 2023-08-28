@@ -160,10 +160,10 @@ export default function MainBody() {
               <button id="saveBtn" onClick={btnCLicked}>
                 Save
               </button>
-              <div className="mainTopIcons">
+              {/* <div className="mainTopIcons">
                 <i id="notify" class="fa-solid fa-bell"></i>
                 <i id="profile" class="fa-solid fa-user"></i>
-              </div>
+              </div> */}
             </div>
 
             {!data ? (
@@ -174,7 +174,7 @@ export default function MainBody() {
                   <div>
                     <h3>Today Overview</h3>
                   </div>
-                  <div>
+                  {/* <div>
                     <h5>
                       More Details{" "}
                       <i
@@ -182,7 +182,7 @@ export default function MainBody() {
                         class="fa-solid fa-arrow-up-right-from-square"
                       ></i>
                     </h5>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="overviewDetail">
                   <div className="windSpeed">
